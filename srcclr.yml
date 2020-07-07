@@ -1,1 +1,1 @@
-custom_maven_command:  -s ../../../pnc_settings.xml -e -V -B -Dmaven.repo.local=../m2 -DskipTests -DfailIfNoTests=false -Dtest=false -Dmaven.test.skip=true -Prelease clean compile
+custom_maven_command:  -s ../../../pnc_settings.xml -e -V -B -Dmaven.repo.local=../m2 -DskipTests -DfailIfNoTests=false -Dtest=false -Dmaven.test.skip=true -Dgpg.skip=true -Prelease clean install
